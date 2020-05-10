@@ -1,0 +1,16 @@
+---
+title: "Presentation and Plotly"
+author: "Jeevithiesh Duggani"
+date: "10/05/2020"
+output: slidy_presentation
+---
+## Slide with Plot
+
+```{r plotly, echo = FALSE}
+    suppressPackageStartupMessages(library(plotly))
+    
+    p <- plot_ly(iris, x = ~Sepal.Length, y = ~Petal.Length, 
+                 color = ~Species, type = "scatter", mode = "markers")
+    p
+```
+
