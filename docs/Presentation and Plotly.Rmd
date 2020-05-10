@@ -2,9 +2,10 @@
 title: "Presentation and Plotly"
 author: "Jeevithiesh Duggani"
 date: "10/05/2020"
-output: slidy_presentation
+output: ioslides_presentation
 ---
 ## Slide with Plot
+`r format(Sys.time(), '%d %B, %Y')`
 
 ```{r plotly, echo = FALSE}
     suppressPackageStartupMessages(library(plotly))
